@@ -47,7 +47,7 @@ Expected: [KeyID]
 ```
 
 ### RemoveRateLimit
-
+Example: `node .\AddToRateLimit.js appid wacky 300 344`
 ```
 Expected: ListType SourceID RateLimit
 	ListType - appid or instanceid
