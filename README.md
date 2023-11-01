@@ -18,8 +18,9 @@ This is a set of command line scripts that can be used to interact with *some* o
 - Models/ApplicationRateLimitFile.js: Class defining rate file for App IDs
 
 ## Installation
-[!NOTE]
-Assumed that NodeJS is installed and available on the command line
+
+> [!NOTE]
+> Assumed that NodeJS is installed and available on the command line
 
 1. Checkout this repo into any directory.
 2. Make a copy of "Config.json" as "Config.dev.json"
@@ -28,21 +29,28 @@ Assumed that NodeJS is installed and available on the command line
 ## Execution
 
 ### AddToRateLimit
-
+Example: `node .\AddToRateLimit.js appid wacky 300 344`
+```
 Expected: ListType SourceID RateLimit [LogLimit]
-   ListType - appid or instanceid
+	ListType - appid or instanceid
 	SourceID - appid or instanceid value based on ListType
-	RateLimit - Integter value; default: 0
+    	RateLimit - Integter value; default: 0
 	LogLimit - Integter value; default: 30000; Only for appid
+```
    
 ### CheckForKey
+Example: `node .\CheckForKey.js wacky`
 
+```
 Expected: [KeyID]
 	KeyID - AppID or InstanceID to lookup
+```
 
 ### RemoveRateLimit
 
+```
 Expected: ListType SourceID RateLimit
 	ListType - appid or instanceid
 	SourceID - appid or instanceid value based on ListType
 	RateLimit - rate limit to remove instanceID from (Instance ID only)
+```
