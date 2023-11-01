@@ -4,7 +4,7 @@
  * @returns No returns but will output each file it looks through, whether it found the key and if it found it will print the value
  */
 
-const rateFunctions = require('./RateLimitFunctions');
+const rateFunctions = require('./RateLimitFileFactory');
 
 if(process.argv.length < 3)
 {

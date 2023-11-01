@@ -1,7 +1,5 @@
-var ApplicationRateLimitFile = require('./ApplicationRateLimitFile');
-var InstanceRateLimitFile = require('./InstanceRateFile');
-
-
+var ApplicationRateLimitFile = require('./Models/ApplicationRateLimitFile');
+var InstanceRateLimitFile = require('./Models/InstanceRateFile');
 
 function CreateRateLimitObject(rateType)
 {

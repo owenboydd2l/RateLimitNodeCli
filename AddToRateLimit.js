@@ -6,7 +6,7 @@
  * @param LogLimit Integer; default 30000
  * @returns Will warn if key already exists in list. Will output file name that was changed if successful
  */
-const rateFunctions = require('./RateLimitFunctions');
+const rateFunctions = require('./RateLimitFileFactory');
 
 function PrintHelp()
 {
