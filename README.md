@@ -27,5 +27,22 @@ Assumed that NodeJS is installed and available on the command line
 
 ## Execution
 
+### AddToRateLimit
 
+Expected: ListType SourceID RateLimit [LogLimit]
+   ListType - appid or instanceid
+	SourceID - appid or instanceid value based on ListType
+	RateLimit - Integter value; default: 0
+	LogLimit - Integter value; default: 30000; Only for appid
    
+### CheckForKey
+
+Expected: [KeyID]
+	KeyID - AppID or InstanceID to lookup
+
+### RemoveRateLimit
+
+Expected: ListType SourceID RateLimit
+	ListType - appid or instanceid
+	SourceID - appid or instanceid value based on ListType
+	RateLimit - rate limit to remove instanceID from (Instance ID only)
