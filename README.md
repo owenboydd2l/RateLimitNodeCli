@@ -54,3 +54,8 @@ Expected: ListType SourceID RateLimit
 	SourceID - appid or instanceid value based on ListType
 	RateLimit - rate limit to remove instanceID from (Instance ID only)
 ```
+
+## TODO
+- Pickup/Review all extra files
+- Provide more control over having multiple targets defined when adding instance IDs
+- Replace term whitelist with "safelist" 
