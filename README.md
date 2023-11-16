@@ -6,7 +6,7 @@ This is a set of command line scripts that can be used to interact with *some* o
 ## File Descriptions
 
 ### Scripts
-- AddToRateLimit.js: Add a new key to a specific rate limit file. Will not overrite if existing
+- AddToRateLimit.js: Add a new key to a specific rate limit file. Will not overwrite if existing
 - CheckForKey.js: Search two of the main rate files for a specific key and return the values used
 - RemoveRateLimit.js: Remove an existing key from a specific rate limit file
 
