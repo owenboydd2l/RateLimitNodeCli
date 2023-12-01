@@ -16,7 +16,7 @@ function PrintHelp()
 	console.log("\tRateLimit - rate limit to remove instanceID from (Instance ID only)\n");
 }
 
-const base_parameter_count = 3;
+const base_parameter_count = 4;
 const param_listType = 2;
 const param_sourceID = 3;
 const param_rateLimit = 4;
@@ -24,6 +24,7 @@ const param_rateLimit = 4;
 if(process.argv.length < base_parameter_count)
 {
 	PrintHelp();
+	return;
 }
 
 let listType = process.argv[param_listType];

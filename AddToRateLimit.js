@@ -15,9 +15,11 @@ function PrintHelp()
 	console.log("\tSourceID - appid or instanceid value based on ListType\n");
 	console.log("\tRateLimit - Integter value; default: 0\n");
 	console.log("\tLogLimit - Integter value; default: 30000; Only for appid\n");
+
+	
 }
 
-const base_parameter_count = 3;
+const base_parameter_count = 4;
 const param_listType = 2;
 const param_sourceID = 3;
 const param_rateLimit = 4;
@@ -26,6 +28,8 @@ const param_logLimit = 5;
 if(process.argv.length < base_parameter_count)
 {
 	PrintHelp();
+
+	return;
 }
 
 let listType = process.argv[param_listType];
@@ -37,6 +41,12 @@ let parameterRequirements =
 ];
 
 let parameterCount = parameterRequirements.find( (requirement) => requirement.name == listType);
+
+if(parameterCount == null || parameterCount == undefined)
+{
+	console.log("Mis-matching ListType. Need either [appid] or [instanceid]");
+	return;
+}
 
 if(process.argv.length <= parameterCount.parameters)
 {
