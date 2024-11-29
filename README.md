@@ -34,8 +34,8 @@ Example: `node .\AddToRateLimit.js appid wacky 300 344`
 Expected: ListType SourceID RateLimit [LogLimit]
 	ListType - appid or instanceid
 	SourceID - appid or instanceid value based on ListType
-    	RateLimit - Integter value; default: 0
-	LogLimit - Integter value; default: 30000; Only for appid
+    	RateLimit - Integer value; default: 0
+	LogLimit - Integer value; default: 30000; Only for appid
 ```
    
 ### CheckForKey
